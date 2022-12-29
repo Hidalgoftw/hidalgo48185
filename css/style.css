@@ -15,6 +15,7 @@
     font-family: 'Anton', sans-serif;
     font-weight: lighter;
     animation: ease-in animacion 1s;
+    flex: 1;
 }
 
 @keyframes animacion{
@@ -26,6 +27,9 @@
     }
 }
 
+header div a img{
+    width: 60px ;
+}
 .header{
     border-bottom: 1px solid white;
     background-color: black;
@@ -33,7 +37,8 @@
     top: 0;
     z-index: 1;
 }
-header nav ul li{
+
+/*header nav ul li{
     display: inline;
     color: white;
     margin-right: 10px;
@@ -41,7 +46,21 @@ header nav ul li{
 header nav ul a {
     text-decoration: none;
     color: white;
+}*/
+
+.navbar{
+    width: 100%;
 }
+
+.navbar-collapse{
+    flex-grow: initial;
+}
+
+.nav-link{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
 body{
     color:#F3B61F ;
     background-color: black;
@@ -62,10 +81,10 @@ body{
     background-position: top;
 }
 .hero h2 {
-    background-color: black;
+    color: black;
 }
 .hero h3{
-    background-color: black;
+    color: black;
 }
 
 .contenidoIndex{
@@ -443,6 +462,9 @@ footer{
     .character div img{
         width: 150px;
         height: 250px;
+    }
+    .characterItem h3{
+        font-size: small;
     }
 }
 

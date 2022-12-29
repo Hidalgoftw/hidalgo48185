@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>Parabatai</title>
 </head>
+
 <body>
     <header class="header">
-        <h1 class="tituloPrincipal">SHADOWHUNTERS</h1>
+        <!--
         <nav>
             <ul>
                 <li><a href="./index.html">Inicio</a></li>
@@ -18,6 +22,35 @@
                 <li><a href="./pages/personajes.html">Personajes</a></li>
                 <li><a href="./pages/comunicate.html">Comunicate</a></li>
             </ul>
+        </nav>-->
+        
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./img/logo.png" alt=""></a>
+                <h1 class="tituloPrincipal">SHADOWHUNTERS</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Inicio</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/libros.html">Libros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/curiosidades.html">Curiosidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/personajes.html">Personajes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/comunicate.html">Comunicate</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -28,17 +61,32 @@
         </section>
         <section class="contenidoIndex">
             <div>
-                <p>Cazadores de Sombras (The Mortal Instruments en inglés) es el nombre de la primera serie de Las Crónicas de Cazadores de Sombras creada por Cassandra Clare. El primer tomo de la obra fue publicado el 27 de marzo del 2007 en Estados Unidos mientras que en español no fue publicado hasta el 17 de febrero del 2009.
-                La Editorial Planeta, bajo sus sellos Destino y Booket, se encarga de su publicación y distribución en España y América Latina.
-                Esta serie sigue a Clary Fray, Jace Herondale, Simon Lewis, Isabelle y Alec Lightwood y otros subterráneos y cazadores de sombras del Instituto de Nueva York. Creyendo ser alguien normal al principio, Clary es absorbida hacia el mundo de los nefilim y de otras criaturas cuando descubre que es una cazadora de sombras.
+                <p>Cazadores de Sombras (The Mortal Instruments en inglés) es el nombre de la primera serie de Las
+                    Crónicas de Cazadores de Sombras creada por Cassandra Clare. El primer tomo de la obra fue publicado
+                    el 27 de marzo del 2007 en Estados Unidos mientras que en español no fue publicado hasta el 17 de
+                    febrero del 2009.
+                    La Editorial Planeta, bajo sus sellos Destino y Booket, se encarga de su publicación y distribución
+                    en España y América Latina.
+                    Esta serie sigue a Clary Fray, Jace Herondale, Simon Lewis, Isabelle y Alec Lightwood y otros
+                    subterráneos y cazadores de sombras del Instituto de Nueva York. Creyendo ser alguien normal al
+                    principio, Clary es absorbida hacia el mundo de los nefilim y de otras criaturas cuando descubre que
+                    es una cazadora de sombras.
                 </p>
             </div>
             <div class="autora">
                 <h2>Información de la autora</h2>
                 <img src="./img/clare.jpg" alt="foto de la autora">
-                <p>Judith Rumelt, nace en Teherán, Irán; 27 de julio de 1973, que escribe con el seudónimo Cassandra Clare, es una escritora estadounidense conocida principalmente por ser de la autora de la serie de libros de Cazadores de Sombras.
-                    Cassandra Clare nació de padres estadounidenses en Teherán, Irán, y pasó gran parte de su infancia viajando por el mundo con su familia. Ella vivió en Francia, Inglaterra y Suiza antes de cumplir los diez años.
-                    Como su familia se mudaba tanto, encontró familiaridad en los libros y fue a todas partes con un libro debajo del brazo. Pasó sus años de secundaria en Los Ángeles, donde solía escribir historias para divertir a sus compañeros de clase, incluida una novela épica llamada "La bella Cassandra", basada en una historia corta de Jane Austen del mismo nombre (y que más tarde inspiró su seudónimo actual)
+                <p>Judith Rumelt, nace en Teherán, Irán; 27 de julio de 1973, que escribe con el seudónimo Cassandra
+                    Clare, es una escritora estadounidense conocida principalmente por ser de la autora de la serie de
+                    libros de Cazadores de Sombras.
+                    Cassandra Clare nació de padres estadounidenses en Teherán, Irán, y pasó gran parte de su infancia
+                    viajando por el mundo con su familia. Ella vivió en Francia, Inglaterra y Suiza antes de cumplir los
+                    diez años.
+                    Como su familia se mudaba tanto, encontró familiaridad en los libros y fue a todas partes con un
+                    libro debajo del brazo. Pasó sus años de secundaria en Los Ángeles, donde solía escribir historias
+                    para divertir a sus compañeros de clase, incluida una novela épica llamada "La bella Cassandra",
+                    basada en una historia corta de Jane Austen del mismo nombre (y que más tarde inspiró su seudónimo
+                    actual)
                 </p>
             </div>
         </section>
@@ -82,16 +130,16 @@
                 <img src="./img/isabelle.png" alt="">
                 <img src="./img/simon.jpg" alt="">
             </div>
-            
+
         </section>
         <section class="frases">
             <h3>Frases Memorables</h3>
             <div class="dichos">
                 <h4 class="dichoUno">
-                    “Dibujar algo es intentar capturarlo para siempre” 
+                    “Dibujar algo es intentar capturarlo para siempre”
                 </h4>
                 <h4 class="dichoDos">
-                    'Te amo, y te amaré hasta que muera, y si hay una vida después de ésta, te amaré también entonces'. 
+                    'Te amo, y te amaré hasta que muera, y si hay una vida después de ésta, te amaré también entonces'.
                 </h4>
             </div>
             <div class="dichos">
@@ -106,9 +154,15 @@
     </main>
     <footer>
         <h3>Redes Sociales</h3>
-        <a href="https://www.facebook.com/" target="_blank"><img class="socialMedia" src="./img/facebook.png" alt="icono facebook"></a>
-        <a href="https://www.instagram.com/" target="_blank"> <img class="socialMedia" src="./img/instagram.png" alt="icono instagram"></a>
+        <a href="https://www.facebook.com/" target="_blank"><img class="socialMedia" src="./img/facebook.png"
+                alt="icono facebook"></a>
+        <a href="https://www.instagram.com/" target="_blank"> <img class="socialMedia" src="./img/instagram.png"
+                alt="icono instagram"></a>
         <a href="https://www.tiktok.com/" target="_blank"> <img class="socialMedia" src="./img/tik-tok.png" alt=""></a>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
