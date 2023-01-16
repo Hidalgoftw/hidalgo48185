@@ -1,0 +1,124 @@
+/*----Main Index----*/
+/*HERO*/
+
+.hero{
+    width: 100%;
+    height: 50vh;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    color:white;
+    background-image:url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    h2{
+        color: black;
+    }
+
+    h3{
+        color: black;
+    }
+}
+
+.contenidoIndex{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div{
+        margin-top: 20px;
+    }
+
+    .autora{
+        border: 5px solid #6CAE75 ;
+        width: 600px;
+        text-align: center;
+        background-image: url(../img/backgroundclare.jpg);
+        background-size: cover;
+    }
+}
+
+.lista{
+    margin-bottom: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+    border: #f15156 solid 2px;
+    width: fit-content;
+    background-image: url(../img/backgroundblack.png);
+    background-size: cover;
+    div{
+        ol{
+            li{
+                margin-left: 20px;
+                a{
+                    text-decoration: none;
+                    color: #6CAE75;
+                }
+            }
+        }
+    }
+}
+
+.personajes{
+    display: flex;
+    div{
+        img{
+            width: 200px;
+            height: 300px;
+            border: 5px solid #6CAE75;
+            margin-left: 40px;
+            transition: 0.5s ease all;
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+.frases{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 15px;
+    div{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-style: italic;
+        .dichoUno{
+            border: 1px solid #f15156;
+            width: 500px;
+            margin-bottom: 5px;
+            padding: 50px;
+            color: #F3B61F;
+            background-image: url(../img/frasesback.jpeg);
+            background-size: cover;
+            font-size: 25px;
+            margin-left: 10px;
+            text-align: center;
+        }
+        .dichoDos{
+            border: 1px solid #f15156;
+            width: 500px;
+            margin-bottom: 5px;
+            padding: 50px;
+            color: #F3B61F;
+            background-image: url(../img/frasesback.jpeg);
+            background-size: cover;
+            font-size: 25px;
+            margin-right: 10px;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  color: #F3B61F;
+  background-color: black;
+  font-family: 'Roboto Condensed', sans-serif; }
+
+.tituloPrincipal {
+  color: #f15156;
+  font-family: 'Anton', sans-serif;
+  font-weight: lighter;
+  animation: ease-in animacion 1s;
+  flex: 1; }
+
+@keyframes animacion {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
+
+header div a img {
+  width: 60px; }
+
+/*---- Header ----*/
+header {
+  border-bottom: 1px solid white;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 1; }
+  header nav {
+    width: 100%; }
+    header nav div a img {
+      width: 60px; }
+    header nav div div {
+      flex-grow: initial; }
+      header nav div div ul li a {
+        font-size: 1.3rem;
+        font-weight: bold; }
+
+/*----Main Index----*/
+/*HERO*/
+.hero {
+  width: 100%;
+  height: 50vh;
+  font-family: 'Mochiy Pop P One', sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  color: white;
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top; }
+  .hero h2 {
+    color: black; }
+  .hero h3 {
+    color: black; }
+
+.contenidoIndex {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .contenidoIndex div {
+    margin-top: 20px; }
+  .contenidoIndex .autora {
+    border: 5px solid #6CAE75;
+    width: 600px;
+    text-align: center;
+    background-image: url(../img/backgroundclare.jpg);
+    background-size: cover; }
+
+.lista {
+  margin-bottom: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 5px;
+  border: #f15156 solid 2px;
+  width: fit-content;
+  background-image: url(../img/backgroundblack.png);
+  background-size: cover; }
+  .lista div ol li {
+    margin-left: 20px; }
+    .lista div ol li a {
+      text-decoration: none;
+      color: #6CAE75; }
+
+.personajes {
+  display: flex; }
+  .personajes div img {
+    width: 200px;
+    height: 300px;
+    border: 5px solid #6CAE75;
+    margin-left: 40px;
+    transition: 0.5s ease all; }
+    .personajes div img:hover {
+      transform: scale(1.05); }
+
+.frases {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+  margin-top: 15px; }
+  .frases div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-style: italic; }
+    .frases div .dichoUno {
+      border: 1px solid #f15156;
+      width: 500px;
+      margin-bottom: 5px;
+      padding: 50px;
+      color: #F3B61F;
+      background-image: url(../img/frasesback.jpeg);
+      background-size: cover;
+      font-size: 25px;
+      margin-left: 10px;
+      text-align: center; }
+    .frases div .dichoDos {
+      border: 1px solid #f15156;
+      width: 500px;
+      margin-bottom: 5px;
+      padding: 50px;
+      color: #F3B61F;
+      background-image: url(../img/frasesback.jpeg);
+      background-size: cover;
+      font-size: 25px;
+      margin-right: 10px;
+      text-align: center; }
+
+/*----Main Libros*/
+.titulolibro {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 32px; }
+
+.saga {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  display: flex; }
+  .saga div {
+    flex: 1; }
+    .saga div .margenUno {
+      font-size: 32px;
+      margin-top: 30px;
+      margin-left: 85px; }
+    .saga div img {
+      width: 300px;
+      height: 400px;
+      margin-left: 50px; }
+    .saga div p {
+      margin-bottom: 40px;
+      width: 400px;
+      border: 3px solid #6CAE75;
+      margin-left: 10px; }
+
+.saga div .margen {
+  font-size: 32px;
+  margin-top: 30px;
+  margin-left: 30px; }
+
+/*----Curiosidades----*/
+.tituloCurioso {
+  text-align: center; }
+
+.adaptacion {
+  display: flex; }
+  .adaptacion div {
+    display: inline-block;
+    margin-left: 150px;
+    margin-top: 50px; }
+    .adaptacion div img {
+      width: 300px;
+      height: 450px; }
+    .adaptacion div p {
+      border: #6CAE75 solid 2px;
+      width: 450px;
+      padding: 3px; }
+    .adaptacion div iframe {
+      border: #f15156 solid 3px;
+      margin-top: 10px; }
+
+.subtitulo {
+  text-align: center;
+  margin-top: 30px; }
+
+.adatapcionDos {
+  display: flex; }
+  .adatapcionDos div {
+    display: flex;
+    flex-wrap: wrap; }
+    .adatapcionDos div h3 {
+      margin-left: 15px; }
+    .adatapcionDos div div div {
+      display: inline-block;
+      margin: 25px; }
+
+/*----Footer----*/
+footer {
+  border-top: 2px solid  white; }
+  footer h3 a {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px; }
+
+/*----Responsive----*/
+@media screen and (max-width: 1460px) {
+  .personajes div img {
+    margin-left: 20px; }
+  .adaptacion {
+    flex-direction: column;
+    align-items: center; }
+  .adaptacion div {
+    margin-left: 0px; }
+  .adaptacion div img {
+    margin-left: 80px; } }
+
+@media screen and (max-width: 1340px) {
+  .personajes div img {
+    margin-left: 10px; }
+  .character {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    justify-items: center; } }
+
+@media screen and (max-width: 1280px) {
+  .personajes {
+    flex-direction: column;
+    align-items: center; }
+  .saga {
+    flex-direction: column;
+    align-items: center; }
+  .titulolibro {
+    text-align: center; } }
+
+@media screen and (max-width: 1020px) {
+  .frases div h4 {
+    width: 400px;
+    padding: 40px; }
+  .character {
+    justify-content: center; }
+  .argumentoDos h3 {
+    font-size: 20px; } }
+
+@media screen and (max-width: 920px) {
+  .actores h4 {
+    font-size: 15px; } }
+
+@media screen and (max-width: 820px) {
+  .frases div h4 {
+    width: 350px;
+    padding: 35px; }
+  .personajes div img {
+    width: 150px;
+    height: 250px; } }
+
+@media screen and (max-width: 700px) {
+  .frases div h4 {
+    width: 300px;
+    font-size: 20px;
+    padding: 30px; }
+  .character div img {
+    width: 200px;
+    height: 300px; } }
+
+@media screen and (max-width: 670px) {
+  .hero {
+    background-size: 670px;
+    height: 35vh; }
+  .hero h2 {
+    font-size: 20px; }
+  .contenidoIndex {
+    font-size: 15px; }
+  .frases div h4 {
+    width: 250px;
+    font-size: 15px;
+    padding: 25px; }
+  .autora {
+    width: 300px;
+    margin-bottom: 10px; }
+  .autora img {
+    width: 250px; }
+  .lista {
+    font-size: 15px; }
+  .frases {
+    font-size: 25px; }
+  .adaptacion div iframe {
+    width: 460px; }
+  .argumentoDos h3 {
+    font-size: 15px; } }
+
+@media screen and (max-width: 520px) {
+  .hero h2 {
+    font-size: 15px; }
+  .lista {
+    width: 250px; }
+  .frases div h4 {
+    width: 200px;
+    font-size: 15px;
+    padding: 20px; }
+  .personajes div img {
+    width: 100px;
+    height: 200px; }
+  .lista {
+    font-size: 10px; }
+  header {
+    font-size: 10px; }
+  .character div img {
+    width: 150px;
+    height: 250px; }
+  .characterItem h3 {
+    font-size: small; }
+  .saga div img {
+    width: 200px;
+    height: 300px; }
+  .saga div p {
+    width: 300px;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: center; }
+  .angel h3 {
+    font-size: 25px; }
+  .adaptacion div iframe {
+    width: 400px; }
+  .adaptacionDos div div img {
+    width: 100px;
+    height: 200px; }
+  .adaptacion div p {
+    width: 350px;
+    margin-left: 50px; }
+  .adaptacion h2 {
+    font-size: 20px; }
+  .adaptacion h3 {
+    font-size: 20px; } }
+
+@media screen and (max-width: 400px) {
+  .frases div h4 {
+    width: 150px;
+    padding: 15px; }
+  header nav ul li {
+    margin-right: 5px; }
+  .adaptacion div iframe {
+    width: 320px;
+    margin-left: 15px; }
+  .adaptacion div p {
+    width: 280px; }
+  .adaptacion div img {
+    width: 200px;
+    height: 350px; } }

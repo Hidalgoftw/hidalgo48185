@@ -1,0 +1,234 @@
+/*----Responsive----*/
+
+@media screen and (max-width:1460px){
+    .personajes div img{
+        margin-left: 20px;
+    }
+    .adaptacion{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .adaptacion div{
+        margin-left: 0px;
+    }
+
+    .adaptacion div img{
+        margin-left: 80px;
+    }
+
+}
+
+@media screen and (max-width:1340px){
+    .personajes div img{
+        margin-left: 10px;
+    }
+    .character{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(10,1fr);
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width:1280px){
+    .personajes{
+        flex-direction: column;
+        align-items: center;
+    }
+    .saga{
+        flex-direction: column;
+        align-items: center;
+    }
+    .titulolibro{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:1020px)
+{
+    .frases div h4{
+        width: 400px;
+        padding: 40px;
+    }
+
+    .character {
+        justify-content: center;
+    }
+
+    .argumentoDos h3{
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width:920px){
+    .actores h4{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:820px){
+    .frases div h4{
+        width: 350px;
+        padding: 35px;
+    }
+
+    .personajes div img{
+        width: 150px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width:700px){
+    .frases div h4{
+        width: 300px;
+        font-size: 20px;
+        padding: 30px;
+    }
+
+    .character div img{
+        width: 200px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:670px){
+    .hero{
+        background-size: 670px;
+        height: 35vh;
+    }
+
+    .hero h2{
+        font-size: 20px;
+    }
+    .contenidoIndex{
+        font-size: 15px;
+    }
+    .frases div h4{
+        width: 250px;
+        font-size: 15px;
+        padding: 25px;
+    }
+
+    .autora{
+        width: 300px;
+        margin-bottom: 10px;
+    }
+    .autora img{
+        width: 250px;
+    }
+
+    .lista{
+        font-size: 15px;
+    }
+
+    .frases{
+        font-size: 25px;
+    }
+
+    .adaptacion div iframe{
+        width: 460px; ;
+    }
+    
+    .argumentoDos h3{
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width:520px){
+    .hero h2{
+        font-size: 15px;
+    }
+    
+    .lista{
+        width: 250px;
+    }
+    .frases div h4{
+        width: 200px;
+        font-size: 15px;
+        padding:20px ;
+    }
+    
+    .personajes div img{
+        width: 100px;
+        height: 200px;
+    }
+    .lista{
+        font-size: 10px;
+    }
+
+    header{
+        font-size: 10px;
+    }
+
+    .character div img{
+        width: 150px;
+        height: 250px;
+    }
+    .characterItem h3{
+        font-size: small;
+    }
+
+    .saga div img{
+        width: 200px;
+        height: 300px;
+    }
+
+    .saga div p{
+        width: 300px;
+        margin-left: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .angel h3{
+        font-size: 25px;
+    }
+
+    .adaptacion div iframe{
+        width: 400px;
+    }
+
+    .adaptacionDos div div img{
+        width: 100px;
+        height: 200px;
+    }
+
+    .adaptacion div p{
+        width: 350px;
+        margin-left: 50px;
+    }
+
+    .adaptacion h2{
+        font-size: 20px;
+    }
+
+    .adaptacion h3{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:400px){
+    .frases div h4{
+        width: 150px;
+        padding: 15px;
+    }
+    header nav ul li{
+        margin-right: 5px;
+    }
+
+    .adaptacion div iframe{
+        width: 320px;
+        margin-left: 15px;
+    }
+
+    .adaptacion div p{
+        width: 280px;
+    }
+
+    .adaptacion div img{
+        width: 200px;
+        height: 350px;
+    }
+}
