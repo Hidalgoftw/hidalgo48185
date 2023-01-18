@@ -1,12 +1,14 @@
+@import"../base/variables";
+
 /*----Curiosidades----*/
 .tituloCurioso{
     text-align:center;
 }
 
 .adaptacion{
-    display: flex;
+    @include flex (flex,0,0);
     div{
-        display: inline-block;
+        @include flex (inline-block,0,0);
         margin-left: 150px;
         margin-top: 50px;
         img{
@@ -14,12 +16,12 @@
             height: 450px;
         }
         p{
-            border: #6CAE75 solid 2px;
+            border: $color-cuaternario solid 2px;
             width: 450px;
             padding: 3px;
         }
         iframe{
-            border: #f15156 solid 3px;
+            border: $color-terciario solid 3px;
             margin-top: 10px;
         }
     }
@@ -30,18 +32,22 @@
     margin-top: 30px;
 }
 
-.adatapcionDos{
-    display: flex;
-    div{
-        display: flex;
+.adaptacionDos{
+    @include flex (flex,0,0);
+    .argumentoDos{
+        @include flex (flex,0,0);
         flex-wrap: wrap;
         h3{
             margin-left: 15px;
         }
         div{
             div{
-                display: inline-block;
-                margin: 25px;
+                img{
+                    width: 200px;
+                    height: 300px;
+                    @include flex (inline-block,0,0);
+                    margin: 25px;
+                }
             }
         }
     }

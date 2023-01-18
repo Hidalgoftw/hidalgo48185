@@ -141,7 +141,7 @@ body{
 
 
 .personajes div img{
-    border: 5px solid #6CAE75;
+    border: 5px solid #6cae75;
 }
 
 .frases{
@@ -157,7 +157,7 @@ body{
     width: 500px;
     margin-bottom: 5px;
     padding: 50px;
-    color: #F3B61F;
+    color: #f3b61f;
     background-image: url(../img/frasesback.jpeg);
     background-size: cover;
     font-size: 25px;
@@ -286,7 +286,7 @@ body{
 }
 
 
-.adaptacionDos div div img{
+.adaptacionDos div div div img{
     width: 200px;
     height: 300px;
 }

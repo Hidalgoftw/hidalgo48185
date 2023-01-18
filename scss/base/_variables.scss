@@ -1,0 +1,18 @@
+
+$color-principal: rgb(0, 0, 0);
+$color-secundario: #f3b61f;
+$color-terciario: #f15156;
+$color-cuaternario: #6cae75;
+$color-quinario: white;
+
+$fontsize:
+20px,
+25px,
+32px;
+
+
+@mixin flex ($flex, $justify, $direction){
+    display: $flex;
+    justify-content: $justify;
+    flex-direction: $direction;
+}

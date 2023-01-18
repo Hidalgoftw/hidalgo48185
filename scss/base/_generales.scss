@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+@import "./variables";
 
 *{
     margin: 0;
@@ -8,13 +9,13 @@
     box-sizing: border-box;
 }
 body{
-    color:#F3B61F ;
-    background-color: black;
+    color: $color-secundario ;
+    background-color: $color-principal;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
 .tituloPrincipal{
-    color: #f15156;
+    color: $color-terciario;
     font-family: 'Anton', sans-serif;
     font-weight: lighter;
     animation: ease-in animacion 1s;

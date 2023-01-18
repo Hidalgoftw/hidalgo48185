@@ -7,7 +7,7 @@
   box-sizing: border-box; }
 
 body {
-  color: #F3B61F;
+  color: #f3b61f;
   background-color: black;
   font-family: 'Roboto Condensed', sans-serif; }
 
@@ -38,9 +38,9 @@ header {
     width: 100%; }
     header nav div a img {
       width: 60px; }
-    header nav div div {
+    header nav div .navbar-collapse {
       flex-grow: initial; }
-      header nav div div ul li a {
+      header nav div .navbar-collapse ul li a {
         font-size: 1.3rem;
         font-weight: bold; }
 
@@ -71,12 +71,13 @@ header {
   font-weight: bold;
   font-size: 20px;
   display: flex;
+  justify-content: 0;
   flex-direction: column;
   align-items: center; }
   .contenidoIndex div {
     margin-top: 20px; }
   .contenidoIndex .autora {
-    border: 5px solid #6CAE75;
+    border: 5px solid #6cae75;
     width: 600px;
     text-align: center;
     background-image: url(../img/backgroundclare.jpg);
@@ -96,14 +97,16 @@ header {
     margin-left: 20px; }
     .lista div ol li a {
       text-decoration: none;
-      color: #6CAE75; }
+      color: #6cae75; }
 
 .personajes {
-  display: flex; }
+  display: flex;
+  justify-content: 0;
+  flex-direction: 0; }
   .personajes div img {
     width: 200px;
     height: 300px;
-    border: 5px solid #6CAE75;
+    border: 5px solid #6cae75;
     margin-left: 40px;
     transition: 0.5s ease all; }
     .personajes div img:hover {
@@ -118,6 +121,7 @@ header {
   .frases div {
     display: flex;
     justify-content: space-between;
+    flex-direction: 0;
     margin-top: 20px;
     margin-bottom: 30px;
     font-style: italic; }
@@ -126,7 +130,7 @@ header {
       width: 500px;
       margin-bottom: 5px;
       padding: 50px;
-      color: #F3B61F;
+      color: #f3b61f;
       background-image: url(../img/frasesback.jpeg);
       background-size: cover;
       font-size: 25px;
@@ -137,7 +141,7 @@ header {
       width: 500px;
       margin-bottom: 5px;
       padding: 50px;
-      color: #F3B61F;
+      color: #f3b61f;
       background-image: url(../img/frasesback.jpeg);
       background-size: cover;
       font-size: 25px;
@@ -152,7 +156,9 @@ header {
 .saga {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: bold;
-  display: flex; }
+  display: flex;
+  justify-content: 0;
+  flex-direction: 0; }
   .saga div {
     flex: 1; }
     .saga div .margenUno {
@@ -166,7 +172,7 @@ header {
     .saga div p {
       margin-bottom: 40px;
       width: 400px;
-      border: 3px solid #6CAE75;
+      border: 3px solid #6cae75;
       margin-left: 10px; }
 
 .saga div .margen {
@@ -179,16 +185,20 @@ header {
   text-align: center; }
 
 .adaptacion {
-  display: flex; }
+  display: flex;
+  justify-content: 0;
+  flex-direction: 0; }
   .adaptacion div {
     display: inline-block;
+    justify-content: 0;
+    flex-direction: 0;
     margin-left: 150px;
     margin-top: 50px; }
     .adaptacion div img {
       width: 300px;
       height: 450px; }
     .adaptacion div p {
-      border: #6CAE75 solid 2px;
+      border: #6cae75 solid 2px;
       width: 450px;
       padding: 3px; }
     .adaptacion div iframe {
@@ -199,20 +209,48 @@ header {
   text-align: center;
   margin-top: 30px; }
 
-.adatapcionDos {
-  display: flex; }
-  .adatapcionDos div {
+.adaptacionDos {
+  display: flex;
+  justify-content: 0;
+  flex-direction: 0; }
+  .adaptacionDos .argumentoDos {
     display: flex;
+    justify-content: 0;
+    flex-direction: 0;
     flex-wrap: wrap; }
-    .adatapcionDos div h3 {
+    .adaptacionDos .argumentoDos h3 {
       margin-left: 15px; }
-    .adatapcionDos div div div {
+    .adaptacionDos .argumentoDos div div img {
+      width: 200px;
+      height: 300px;
       display: inline-block;
+      justify-content: 0;
+      flex-direction: 0;
       margin: 25px; }
+
+/*----Main Personajes----*/
+.character {
+  margin: 40px;
+  display: grid;
+  justify-content: 0;
+  flex-direction: 0;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 20px; }
+  .character h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold; }
+  .character .characterItem img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    transition: 0.3s ease all; }
+    .character .characterItem img:hover {
+      transform: scale(1.03); }
 
 /*----Footer----*/
 footer {
-  border-top: 2px solid  white; }
+  border-top: 2px solid white; }
   footer a img {
     width: 50px;
     height: 50px;
@@ -249,7 +287,7 @@ footer {
     text-align: center; } }
 
 @media screen and (max-width: 1020px) {
-  .frases div h4 {
+  .frases .dichos h4 {
     width: 400px;
     padding: 40px; }
   .character {
@@ -262,7 +300,7 @@ footer {
     font-size: 15px; } }
 
 @media screen and (max-width: 820px) {
-  .frases div h4 {
+  .frases .dichos h4 {
     width: 350px;
     padding: 35px; }
   .personajes div img {
@@ -270,11 +308,11 @@ footer {
     height: 250px; } }
 
 @media screen and (max-width: 700px) {
-  .frases div h4 {
+  .frases .dichos h4 {
     width: 300px;
     font-size: 20px;
     padding: 30px; }
-  .character div img {
+  .character .characterItem img {
     width: 200px;
     height: 300px; } }
 
@@ -286,15 +324,15 @@ footer {
     font-size: 20px; }
   .contenidoIndex {
     font-size: 15px; }
-  .frases div h4 {
+    .contenidoIndex .autora {
+      width: 300px;
+      margin-bottom: 10px; }
+      .contenidoIndex .autora img {
+        width: 250px; }
+  .frases .dichos h4 {
     width: 250px;
     font-size: 15px;
     padding: 25px; }
-  .autora {
-    width: 300px;
-    margin-bottom: 10px; }
-  .autora img {
-    width: 250px; }
   .lista {
     font-size: 15px; }
   .frases {
@@ -305,11 +343,14 @@ footer {
     font-size: 15px; } }
 
 @media screen and (max-width: 520px) {
+  .hero {
+    background-size: 520px;
+    height: 30vh; }
   .hero h2 {
     font-size: 15px; }
   .lista {
     width: 250px; }
-  .frases div h4 {
+  .frases .dichos h4 {
     width: 200px;
     font-size: 15px;
     padding: 20px; }
@@ -320,7 +361,7 @@ footer {
     font-size: 10px; }
   header {
     font-size: 10px; }
-  .character div img {
+  .character .characterItem img {
     width: 150px;
     height: 250px; }
   .characterItem h3 {
@@ -337,7 +378,7 @@ footer {
     font-size: 25px; }
   .adaptacion div iframe {
     width: 400px; }
-  .adaptacionDos div div img {
+  .adaptacionDos .argumentoDos .actor .actores img {
     width: 100px;
     height: 200px; }
   .adaptacion div p {
@@ -349,7 +390,10 @@ footer {
     font-size: 20px; } }
 
 @media screen and (max-width: 400px) {
-  .frases div h4 {
+  .hero {
+    background-size: 470px;
+    height: 27vh; }
+  .frases .dichos h4 {
     width: 150px;
     padding: 15px; }
   header nav ul li {

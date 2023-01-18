@@ -1,8 +1,10 @@
+@import"../base/variables";
+
 /*---- Header ----*/
 
 header{    
-    border-bottom: 1px solid white;
-    background-color: black;
+    border-bottom: 1px solid $color-quinario;
+    background-color: $color-principal;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -16,7 +18,7 @@ header{
                     width: 60px ;
                 }
             }
-            div{
+            .navbar-collapse{
                 flex-grow: initial;
                 ul{
                     li{
